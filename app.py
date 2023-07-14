@@ -19,6 +19,9 @@ def about():
     name = 'Locj Web Flask'
     return render_template('about.html',name=name, title='About us')
 
+@app.get('/home/contact')
+def home_contact():
+    return '<h1>This is home/contact</h1>'
 
 @app.route('/post', methods=['GET','POST'])
 def post():
